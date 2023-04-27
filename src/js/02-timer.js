@@ -51,12 +51,12 @@ const options = {
                 secondsElem.textContent = seconds;
                 
                 
-            if (futureTime <= currentTime){
+            if (deltaTime < 1000){
                 clearInterval(intervalId);
-                daysElem.textContent = "00";
-                hoursElem.textContent = "00";
-                minutesElem.textContent = "00";
-                secondsElem.textContent = "00";
+                // daysElem.textContent = "00";
+                // hoursElem.textContent = "00";
+                // minutesElem.textContent = "00";
+                // secondsElem.textContent = "00";
             }
 
             // console.log(`${days}:${hours}:${minutes}:${seconds}`);
